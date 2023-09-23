@@ -1,0 +1,42 @@
+---
+title: "Exploring Quarto and Latex"
+author: "Orville D. Hombrebueno"
+format: pdf
+editor: visual
+number-sections: true
+---
+
+## Integration by Substitution
+
+::: {#thm-sub_rule}
+### Substitution Rule
+
+If $u = g(x)$ is a differentiable function whose range is an interval $I$ and $f$ is continues on $I$, then
+
+$$
+\int f(g(x))\cdot g'(x)dx=\int f(u)du.
+$$
+:::
+
+::: {#exm-sub_rule}
+1.  $\displaystyle\int(1-4x)^\frac{1}{2}dx$
+
+    If we let $u = 1-4x$, then $du=-4dx$. We multiply the integrand by $\dfrac{-4}{-4}$. Thus,
+
+    $$
+    \int(1-4x)^{1/2}dx=\int(1-4x)^{1/2}\cdot\dfrac{-4}{-4}dx=\int u^{1/2} \left( -\dfrac{du}{4} \right) = -\dfrac{1}{4}\int u^{1/2}du=-\dfrac{1}{4}\cdot\dfrac{2u^{3/2}}{3} + C.$$
+
+    We put the final answer in terms of $x$ by substituting $u=1-4x$. Therefore,
+    
+    $$\int(1-4x)^{1/2}dx=-\dfrac{(1-4x)^{3/2}}{6}+C$$
+
+2. $\displaystyle\int x^2(x^3-1)^{10}dx$
+
+:::
+
+$$
+\begin{aligned} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{aligned}
+$$
